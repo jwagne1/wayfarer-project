@@ -1,0 +1,11 @@
+.hero {
+    border: green 1px solid;
+    max-height: 25REM;
+    overflow: hidden;
+    
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+}

@@ -1,0 +1,27 @@
+.content {
+    height: 100%;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+h3 {
+    font-size: 1REM;
+    font-family: cursive;
+}
+
+.article_container{
+    display: flex;
+
+}
+
+.article {
+    font-size-adjust: 0.75REM;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: black 1px solid;
+    margin: 1REM, 2REM, 1REM, 2REM;
+    padding: 1REM;
+}
