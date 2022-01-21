@@ -7,17 +7,17 @@ import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [
-    HeroComponent,
-    ContentComponent
-  ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [
-    HeroComponent,
-    ContentComponent
-  ]
+    declarations: [
+        HeroComponent,
+        ContentComponent
+    ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
+    exports: [
+        HeroComponent,
+        ContentComponent
+    ]
 })
 export class HomeModule { }
