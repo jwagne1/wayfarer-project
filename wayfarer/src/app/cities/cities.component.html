@@ -2,38 +2,22 @@
 
     <div class="cities_list">
 
-        <div class="city_item">
-            <a href="#">
-                San Francisco
+
+
+
+        <div class="city_item" *ngFor="let city of cities">
+            <a [routerLink]="[city.id]">
+                {{ city.name }}
             </a>
         </div>
-        <div class="city_item">
-            <a href="#">
-                San Diego
-            </a>
-        </div>
-        <div class="city_item">
-            <a href="#">
-                Los Angeles
-            </a>
-        </div>
-        <div class="city_item">
-            <a href="#">
-                Fresno
-            </a>
-        </div>
-        <div class="city_item">
-            <a href="#">
-                Bakersfield
-            </a>
-        </div>
+
+ 
     </div>
 
-    <div class="city_info">
+<div>
+    <router-outlet></router-outlet>
+</div>
 
-        -city info-
-
-    </div>
 
 
 

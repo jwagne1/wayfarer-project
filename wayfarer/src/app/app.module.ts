@@ -9,13 +9,15 @@ import { HeaderComponent } from './header/header.component';
 import { CitiesComponent } from './cities/cities.component';
 import { HomeComponent } from './home/home.component';
 import { HomeModule } from './home/home.module';
+import { CityComponent } from './city/city.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    CitiesComponent
+    CitiesComponent,
+    CityComponent
       
   ],
   imports: [
