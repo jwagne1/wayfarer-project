@@ -4,7 +4,8 @@ export const cityData = [
        id: 1,
        name: 'San Francisco', 
        country: 'USA',
-       population: '3,318,000'
+       population: '3,318,000',
+       img: '../../assets/images/sf-ggb.jpg'
     },
     {
         id: 2,
