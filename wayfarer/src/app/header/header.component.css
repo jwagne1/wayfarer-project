@@ -1,11 +1,30 @@
-header {
+nav {
     border: blue 1px solid;
     background-color: gray;
     font-size: 2REM;
     padding: 1.5REM;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
+
+
+
+  .navItem {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
 a {
     text-decoration: none;
     color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
 }
