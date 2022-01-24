@@ -7,6 +7,10 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./add-post.component.css']
 })
 export class AddPostComponent implements OnInit {
+  city: any;
+  user: string|null ='';
+  title: string|null ='';
+  post: string|null ='';
 
   constructor() { }
 
