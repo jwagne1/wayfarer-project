@@ -6,6 +6,7 @@ import { CitiesComponent } from './cities/cities.component';
 import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
     component: PostComponent
   },
   {
+    path: 'addPost',
+    component: AddPostComponent
+  },
+  {
     path: 'search',
     component: SearchComponent
   },
@@ -28,7 +33,8 @@ const routes: Routes = [
   {
     path: 'cities',
     component: CitiesComponent
-  }
+  },
+
 
 ];
 

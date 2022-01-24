@@ -13,6 +13,7 @@ import { HomeModule } from './home/home.module';
 import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
+import { AddPostComponent } from './add-post/add-post.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SearchComponent } from './search/search.component';
     CitiesComponent,
     CityComponent,
     PostComponent,
-    SearchComponent
+    SearchComponent,
+    AddPostComponent
       
   ],
   imports: [
