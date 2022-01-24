@@ -20,9 +20,16 @@
         </DD>
     
     </dl>
-    <div *ngFor="let post of posts">
-        {{post.post}}
-    </div>
+
+    <ng-container *ngFor="let post of posts.slice().reverse() let i = index;">
+        <div *ngIf="post.city_id == city.id ">
+            <h2>{{post.title}}</h2>
+            <i>{{post.author}}
+            {{post.date}}</i><br>
+            {{post.post}}
+        </div>
+    </ng-container>
+    
 </div>
 
 

@@ -14,10 +14,12 @@ const routes: Routes = [
     path: 'cities/:id',
     component: CityComponent
   },
+
   {
     path: 'cities',
     component: CitiesComponent
   }
+
 ];
 
 @NgModule({

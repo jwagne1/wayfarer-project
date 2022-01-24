@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { cityData } from '../cities/cities_data';
 import { postData } from '../posts';
 
+
 @Component({
   selector: 'app-city',
   templateUrl: './city.component.html',
