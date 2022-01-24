@@ -23,7 +23,9 @@
 
     <ng-container *ngFor="let post of posts.slice().reverse() let i = index;">
         <div *ngIf="post.city_id == city.id ">
-            <h2>{{post.title}}</h2>
+            <h2><a routerLink="/posts/{{post.id}}">
+                {{post.title}}
+            </a> </h2>
             <i>{{post.author}}
             {{post.date}}</i><br>
             {{post.post}}

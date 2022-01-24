@@ -1,9 +1,29 @@
-<nav> 
-    <div class="navItem">
-        <a routerLink="">Wayfarer</a>  
+<div class="main_header">
+    <nav> 
+
+        <div class="navItem">
+            <a routerLink="">Wayfarer</a>  
+        </div>
+        
+        <div class="navItem">
+            <a routerLink="cities">Cities</a>  
+        </div>
+
+    </nav>
+
+
+    <div class="search">
+        <input [(ngModel)]="search" type="text" placeholder="Search"/>
+        <input (click)="searchPosts(search)" type="submit" value="Search"/>  
     </div>
-    
-    <div class="navItem">
-        <a routerLink="cities">Cities</a>  
+
+    <div class="results"  *ngIf="posts">
+            <div class="result" *ngFor="let post of posts">
+               <a routerLink="/posts/{{post.id}}"> {{post.title}} by {{post.author}}</a>
+            </div>
+            <input  (click)="clearSearch()" type="submit" value="clear"  *ngIf="posts.length >= 1"/>
     </div>
-</nav>
+
+</div>
+
+
