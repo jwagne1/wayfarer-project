@@ -14,6 +14,7 @@ import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
 import { AddPostComponent } from './add-post/add-post.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AddPostComponent } from './add-post/add-post.component';
     CityComponent,
     PostComponent,
     SearchComponent,
-    AddPostComponent
+    AddPostComponent,
+    SearchResultsComponent
       
   ],
   imports: [
