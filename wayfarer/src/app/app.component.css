@@ -6,11 +6,11 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: red 1px solid;
+    
 }
 
 header {
-    border: blue 1px solid;
+    
 }
 
 

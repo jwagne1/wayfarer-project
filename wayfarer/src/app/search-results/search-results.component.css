@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+}
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 2REM;
+    width: 100%;
+}
+.results{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    width: 80%;
+    border: double black 5px;
+}
+
+.result{
+    width: 75%;
+    align-self: center;
+}
