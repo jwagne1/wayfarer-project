@@ -7,6 +7,7 @@ import { CityComponent } from './city/city.component';
 import { PostComponent } from './post/post.component';
 import { SearchComponent } from './search/search.component';
 import { AddPostComponent } from './add-post/add-post.component';
+import { SearchResultsComponent } from './search-results/search-results.component';
 
 const routes: Routes = [
   {
@@ -26,8 +27,8 @@ const routes: Routes = [
     component: AddPostComponent
   },
   {
-    path: 'search',
-    component: SearchComponent
+    path: 'search/:search',
+    component: SearchResultsComponent
   },
 
   {
