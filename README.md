@@ -31,5 +31,5 @@ A user should be able to:
 
 ### Wireframe Diagram
 
-![Home](/wayfarer/src/assets/images/Wayfarer-Home.png "Home")
-![City](/wayfarer/src/assets/images/Wayfarer-City.png "City")
+![Wayfarer-Home](https://user-images.githubusercontent.com/94083595/151050189-725632f2-cf82-47d9-b514-2ba358742683.png)
+![Wayfarer-City](https://user-images.githubusercontent.com/94083595/151050216-a7165a17-7683-48d0-bd37-bed2f09cf58f.png)
