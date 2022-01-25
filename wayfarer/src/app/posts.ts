@@ -1,3 +1,15 @@
+export class Post {
+    constructor(
+    public id: number,
+    public city_id: number,
+    public date: string,
+    public author: string,
+    public title: string,
+    public post: string
+    ){}
+
+}
+
 export const postData = [
 
     {
