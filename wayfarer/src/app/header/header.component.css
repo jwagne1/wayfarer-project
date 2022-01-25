@@ -1,5 +1,4 @@
 .main_header {
-    
     background-color: dodgerblue;
     font-size: 2REM;
     padding: 1.5REM;
@@ -46,4 +45,9 @@ a:hover {
 .results {
   font-size: 1rem;
   font-weight: 400;
+}
+
+.spacer{
+  min-width: 10REM;
+  flex-grow: 3;
 }

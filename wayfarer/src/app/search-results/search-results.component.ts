@@ -11,6 +11,7 @@ export class SearchResultsComponent implements OnInit {
   posts: any = [];
   search: string | null = "";
   postData: any = postData;
+  cities = ['San Francisco','London','Gibraltar','Sydney','Seattle'];
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {

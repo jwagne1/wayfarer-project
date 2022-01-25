@@ -12,6 +12,9 @@
 
 .weather {
     align-self: center;
+    border: double black 5px;
+    padding: 1REM;
+    margin: 1REM auto;
 }
 
 .city_data{
@@ -26,7 +29,7 @@ h2{
     display: block;
     text-align: center;
     margin: 1REM auto;
-    border: 1px black solid;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 img {

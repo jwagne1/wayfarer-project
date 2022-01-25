@@ -2,8 +2,7 @@
     <div class="results">
         <h1>Results</h1>
         <div *ngFor="let post of posts" class="result">
-            <h2>{{post.title}}</h2>
-            <h3>{{post.author}}</h3>
+            <h2><a routerLink="/posts/{{post.id}}">{{cities[post.city_id-1]}} ~ {{post.title}} by {{post.author}}</a></h2>
             <p>{{post.post}}</p>
         </div>
     </div>
