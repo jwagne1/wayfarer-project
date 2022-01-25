@@ -11,7 +11,9 @@ export class SearchComponent implements OnInit, OnDestroy {
   posts: any;
   subscription: Subscription = new Subscription;
 
-  constructor(private data: SearchDataService) { }
+  constructor(private searchDataService: SearchDataService) {
+    
+   }
 
   ngOnInit(): void {
     
