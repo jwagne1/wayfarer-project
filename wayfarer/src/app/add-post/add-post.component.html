@@ -18,6 +18,7 @@
     <input [(ngModel)]="title"  name="title" type="text" placeholder="Title" maxlength="200" required/><br><br>
 
 
+
     <label for="post">Post:</label><br>
     <span class="red" *ngIf="postError">ERROR: Post field cannot be empty!<br></span>
     <textarea [(ngModel)]="post"  name="post" rows="10" cols="30" required>                             
@@ -29,3 +30,4 @@
     </form>
 
 </div>
+

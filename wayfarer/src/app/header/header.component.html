@@ -19,8 +19,9 @@
     <div class="search">
         
         <input [(ngModel)]="search" type="text" placeholder="Search"/>
-        <input (click)="searchPosts(search)" type="submit" value="Search"/>  
-        
+
+        <input (click)="searchPosts()" type="submit" value="Search"/>  
+
     </div>
 
     <div class="results"  *ngIf="posts">

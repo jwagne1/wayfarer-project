@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { SearchDataService } from '../search-data.service';
 import { Subscription } from 'rxjs';
 import { postData } from '../posts';
+import { Router } from '@angular/router';
 
 
 
@@ -17,7 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   cities = ['San Francisco','London','Gibraltar','Sydney','Seattle'];
  
 
-  constructor(){} 
+  constructor(private router: Router){} 
 
   ngOnInit() {
     
@@ -27,18 +28,22 @@ export class HeaderComponent implements OnInit, OnDestroy {
     
   }
 
-  searchPosts(searchString: string){
-    console.log(searchString)
-    let postArray = [];
-    for(let i = 0; i < postData.length; i++){
-      if(postData[i].post.toLowerCase().includes(searchString.toLowerCase())){
-        postArray.push(postData[i])
-      }
+
+  searchPosts(){
+    if(this.search){
+      this.router.navigateByUrl("/search/" + this.search)
     }
-    console.log(searchString)
-    this.posts =  postArray;
-    console.log(postArray)
-    
+
+    // let postArray = [];
+    // for(let i = 0; i < postData.length; i++){
+    //   if(postData[i].post.toLowerCase().includes(searchString.toLowerCase())){
+    //     postArray.push(postData[i])
+    //   }
+    // }
+    // console.log(searchString)
+    // this.posts =  postArray;
+    // console.log(postArray)
+
   }
 
   clearSearch(){
