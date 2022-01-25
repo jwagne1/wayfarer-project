@@ -5,6 +5,7 @@ import { postData } from '../posts';
 import { Router } from '@angular/router';
 
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -14,6 +15,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   title: string ="Wayfarer";
   search: string = "";
   posts: any = [];
+  cities = ['San Francisco','London','Gibraltar','Sydney','Seattle'];
  
 
   constructor(private router: Router){} 
@@ -25,6 +27,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     
   }
+
 
   searchPosts(){
     if(this.search){
@@ -40,7 +43,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
     // console.log(searchString)
     // this.posts =  postArray;
     // console.log(postArray)
+
   }
+
   clearSearch(){
     this.posts=[];
   }

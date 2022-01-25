@@ -1,0 +1,42 @@
+.cities_main_container{
+    display: flex;
+    flex-direction: column;
+    width: 10REM;
+    margin: 0;
+    padding: 1REM;
+    border: 1px brown solid;
+    background-color: gray;
+    margin-right: 2REM;
+}
+
+.cities_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    
+}
+
+.city_item{
+    border: brown 1PX solid;
+    border-radius: 25%;
+    width: 10REM;
+    margin: 0.25REM auto;
+    text-align: center;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.city_item:hover{
+    border: brown 1PX solid;
+    border-radius: 25%;
+    width: 10REM;
+    margin: 0.25REM auto;
+    text-align: center;
+    background-color: dodgerblue;
+}

@@ -1,37 +1,39 @@
+<div class="city_page">
+    <div class="menu">
 
-<div>
+        <app-cities></app-cities>
 
-    <app-cities></app-cities>
-
-</div>
+    </div>
 
 
 
-<div> 
+    <div class="city_data"> 
 
-    <h2>{{city.name}}, {{city.country}} </h2>
-    <img src="{{ city.img }}">
-    <dl>
-        <dt>
-            Population
-        </dt>
-        <DD>
-            {{city.population}}
-        </DD>
-    
-    </dl>
-
-    <ng-container *ngFor="let post of posts.slice().reverse() let i = index;">
-        <div *ngIf="post.city_id == city.id ">
-            <h2><a routerLink="/posts/{{post.id}}">
-                {{post.title}}
-            </a> </h2>
-            <i>{{post.author}}
-            {{post.date}}</i><br>
-            {{post.post}}
+        <h2>{{city.name}}, {{city.country}} </h2>
+        <img src="{{ city.img }}">
+        <dl>
+            <dt>
+                Population
+            </dt>
+            <DD>
+                {{city.population}}
+            </DD>
+        
+        </dl>
+        <div class="posts">
+            <ng-container *ngFor="let post of posts.slice().reverse() let i = index;">
+                <div class="post" *ngIf="post.city_id == city.id ">
+                    <h3><a routerLink="/posts/{{post.id}}">
+                        {{post.title}}
+                    </a> </h3>
+                    <i>{{post.author}}
+                    {{post.date}}</i><br>
+                    {{post.post}}
+                </div>
+            </ng-container>
         </div>
-    </ng-container>
-    
+        
+    </div>
 </div>
 
 
