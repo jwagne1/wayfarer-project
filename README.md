@@ -30,6 +30,4 @@ A user should be able to:
 
 
 ### Wireframe Diagram
-/Users/jw-mac/unit3/projects/wayfarer-project/wayfarer/src/assets/images/Wayfarer-Home.png
-/Users/jw-mac/unit3/projects/wayfarer-project/wayfarer/src/assets/images/Wayfarer-City.png
 
