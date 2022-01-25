@@ -10,6 +10,10 @@
 
 }
 
+.weather {
+    align-self: center;
+}
+
 .city_data{
     max-width: 80%;
     display: flex;

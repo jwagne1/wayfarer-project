@@ -18,18 +18,17 @@
 
     <div class="search">
         
-        <input [(ngModel)]="search" type="text" placeholder="Search"/>
-
-        <input (click)="searchPosts()" type="submit" value="Search"/>  
-
+            <input [(ngModel)]="search" type="text" placeholder="Search"/>
+            <input (click)="searchPosts()" type="submit" value="Search"/>  
+        
     </div>
 
-    <div class="results"  *ngIf="posts">
+    <!-- <div class="results"  *ngIf="posts">
             <div class="result" *ngFor="let post of posts">
                <a routerLink="/posts/{{post.id}}">{{cities[post.city_id-1]}} ~ {{post.title}} by {{post.author}}</a>
             </div>
-            <input  (click)="clearSearch()" type="submit" value="clear"  *ngIf="posts.length >= 1"/>
-    </div>
+            <input  (click)="clearForm("searchForm")" type="submit" value="clear"  *ngIf="posts.length >= 1"/>
+    </div> -->
 
 </div>
 

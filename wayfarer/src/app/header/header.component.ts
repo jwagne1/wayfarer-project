@@ -3,6 +3,7 @@ import { SearchDataService } from '../search-data.service';
 import { Subscription } from 'rxjs';
 import { postData } from '../posts';
 import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 
 
@@ -28,11 +29,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
     
   }
 
+  clearForm(){
+    this.search='';
+  }
 
   searchPosts(){
     if(this.search){
       this.router.navigateByUrl("/search/" + this.search)
+      
     }
+
+
 
     // let postArray = [];
     // for(let i = 0; i < postData.length; i++){
@@ -43,12 +50,10 @@ export class HeaderComponent implements OnInit, OnDestroy {
     // console.log(searchString)
     // this.posts =  postArray;
     // console.log(postArray)
-
+    this.search='';
   }
 
-  clearSearch(){
-    this.posts=[];
-  }
+
     
 
 }

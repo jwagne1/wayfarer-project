@@ -10,6 +10,11 @@
     <div class="city_data"> 
 
         <h2>{{city.name}}, {{city.country}} </h2>
+        <div class="weather">
+
+            Current Conditions: {{weather.weather[0].description}} with a high of {{weather.main.temp_max}}F and a low of {{weather.main.temp_min}}F
+
+        </div>
         <img src="{{ city.img }}">
         <dl>
             <dt>

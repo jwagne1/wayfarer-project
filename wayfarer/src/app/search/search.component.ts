@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   posts: any;
   subscription: Subscription = new Subscription;
 
-  constructor(private searchDataService: SearchDataService) {
+  constructor() {
     
    }
 
@@ -20,7 +20,7 @@ export class SearchComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    this.subscription.unsubscribe();
+    
   }
 
 }
