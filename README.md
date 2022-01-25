@@ -31,4 +31,5 @@ A user should be able to:
 
 ### Wireframe Diagram
 
-
+![Home](/wayfarer/src/assets/images/Wayfarer-Home.png "Home")
+![City](/wayfarer/src/assets/images/Wayfarer-City.png "City")
