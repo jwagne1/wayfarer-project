@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { SearchDataService } from '../search-data.service';
+import { Subscription } from 'rxjs';
+import { postData } from '../posts';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
+
 
 
 @Component({
@@ -6,12 +12,48 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent implements OnInit, OnDestroy {
   title: string ="Wayfarer";
+  search: string = "";
+  posts: any = [];
+  cities = ['San Francisco','London','Gibraltar','Sydney','Seattle'];
+ 
 
-  constructor() { }
+  constructor(private router: Router){} 
 
-  ngOnInit(): void {
+  ngOnInit() {
+    
   }
+
+  ngOnDestroy() {
+    
+  }
+
+  clearForm(){
+    this.search='';
+  }
+
+  searchPosts(){
+    if(this.search){
+      this.router.navigateByUrl("/search/" + this.search)
+      
+    }
+
+
+
+    // let postArray = [];
+    // for(let i = 0; i < postData.length; i++){
+    //   if(postData[i].post.toLowerCase().includes(searchString.toLowerCase())){
+    //     postArray.push(postData[i])
+    //   }
+    // }
+    // console.log(searchString)
+    // this.posts =  postArray;
+    // console.log(postArray)
+    this.search='';
+  }
+
+
+    
 
 }

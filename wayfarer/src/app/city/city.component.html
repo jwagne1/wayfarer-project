@@ -1,0 +1,44 @@
+<div class="city_page">
+    <div class="menu">
+
+        <app-cities></app-cities>
+
+    </div>
+
+
+
+    <div class="city_data"> 
+
+        <h2>{{city.name}}, {{city.country}} </h2>
+        <div class="weather">
+
+            Current Conditions: {{weather.weather[0].description}} with a high of {{weather.main.temp_max}}F and a low of {{weather.main.temp_min}}F
+
+        </div>
+        <img src="{{ city.img }}">
+        <dl>
+            <dt>
+                Population
+            </dt>
+            <DD>
+                {{city.population}}
+            </DD>
+        
+        </dl>
+        <div class="posts">
+            <ng-container *ngFor="let post of posts.slice().reverse() let i = index;">
+                <div class="post" *ngIf="post.city_id == city.id ">
+                    <h3><a routerLink="/posts/{{post.id}}">
+                        {{post.title}}
+                    </a> </h3>
+                    <i>{{post.author}}
+                    {{post.date}}</i><br>
+                    {{post.post}}
+                </div>
+            </ng-container>
+        </div>
+        
+    </div>
+</div>
+
+

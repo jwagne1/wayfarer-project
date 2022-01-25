@@ -1,0 +1,50 @@
+.city_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:0;
+    padding:0;
+}
+
+.menu{
+
+}
+
+.weather {
+    align-self: center;
+}
+
+.city_data{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2{
+    width: 20REM;
+    display: block;
+    text-align: center;
+    margin: 1REM auto;
+    border: 1px black solid;
+}
+
+img {
+    max-width: 100%;
+}
+
+h3 {
+    margin: 0;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post {
+    border: double black 5px;
+    margin: 1rem;
+    padding: 1REM;
+}

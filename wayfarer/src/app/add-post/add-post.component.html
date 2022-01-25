@@ -1,0 +1,33 @@
+<div class="addPost">
+    <form #addPostForm="ngForm" id="addPostForm">
+    <br>
+    <label for="city">City:</label>
+    <select [(ngModel)]="city" name="city">
+        <option selected="selected" value="1">San Francisco</option>
+        <option value="2">London</option>
+        <option value="3">Gibraltar</option>
+        <option value="4">Sydney</option>
+        <option value="5">Seattle</option>
+    </select>
+    <br><br>
+
+    <label for="user">Username:</label>
+    <input [(ngModel)]="user" name="user" type="text" placeholder="Username" required/><br><br>
+
+    <label for="title">Title:</label>
+    <input [(ngModel)]="title"  name="title" type="text" placeholder="Title" maxlength="200" required/><br><br>
+
+
+
+    <label for="post">Post:</label><br>
+    <span class="red" *ngIf="postError">ERROR: Post field cannot be empty!<br></span>
+    <textarea [(ngModel)]="post"  name="post" rows="10" cols="30" required>                             
+    </textarea><br><br>
+
+    <input (click)="addPost(addPostForm, city, user, title, post)" type="submit" value="Add Post"/>  
+    <input (click)="resetForm(addPostForm)" type="submit" value="RESET"/>  
+
+    </form>
+
+</div>
+

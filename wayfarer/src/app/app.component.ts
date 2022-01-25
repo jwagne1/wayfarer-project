@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { cityData } from './cities/cities_data'
 
 
 
@@ -10,4 +10,6 @@ import { RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title: string ="Wayfarer";
+  cities = cityData;
+  posts: any = ['test'];
 }

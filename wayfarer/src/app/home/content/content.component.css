@@ -13,15 +13,17 @@ h3 {
     font-family: cursive;
 }
 
-.article_container{
+div.article_container{
     display: flex;
+    justify-content: space-between;
 
 }
 
-.article {
-    font-size-adjust: 0.75REM;
+div.article {
+    max-width: 25vw;
+    font-size: 1REM;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border: black 1px solid;
-    margin: 1REM, 2REM, 1REM, 2REM;
+    margin: 1REM 2REM;
     padding: 1REM;
 }
