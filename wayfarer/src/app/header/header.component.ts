@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs';
 import { postData } from '../posts';
 
 
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -13,6 +14,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   title: string ="Wayfarer";
   search: string = "";
   posts: any = [];
+  cities = ['San Francisco','London','Gibraltar','Sydney','Seattle'];
  
 
   constructor(){} 
@@ -26,6 +28,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   }
 
   searchPosts(searchString: string){
+    console.log(searchString)
     let postArray = [];
     for(let i = 0; i < postData.length; i++){
       if(postData[i].post.toLowerCase().includes(searchString.toLowerCase())){
@@ -35,7 +38,9 @@ export class HeaderComponent implements OnInit, OnDestroy {
     console.log(searchString)
     this.posts =  postArray;
     console.log(postArray)
+    
   }
+
   clearSearch(){
     this.posts=[];
   }

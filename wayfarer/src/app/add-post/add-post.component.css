@@ -1,3 +1,22 @@
 .red {
     color: red;
 }
+
+.addPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 2REM;
+    width: 100%;
+ 
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-self: center;
+    width: 30%;
+    border: double black 5px;
+}

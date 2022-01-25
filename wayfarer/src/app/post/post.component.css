@@ -1,0 +1,14 @@
+.individual_post{
+    margin: 1REM;
+    max-width: 80%;
+
+}
+
+.post_view {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:0;
+    padding:0;
+    
+}
